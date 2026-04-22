@@ -23,7 +23,7 @@ const stats = [
   { value: 'Private', label: 'Access model' },
 ];
 
-const process = [
+const processSteps = [
   {
     step: '01',
     title: 'Merchant flow enters the network',
@@ -230,7 +230,7 @@ export default function HomePage() {
         </div>
 
         <div className="process-grid">
-          {process.map((item) => (
+          {processSteps.map((item) => (
             <article className="process-card" key={item.step}>
               <div className="process-step">{item.step}</div>
               <h3>{item.title}</h3>
