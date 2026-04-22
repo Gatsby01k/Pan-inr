@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { LeadForm } from '@/components/LeadForm';
+import LeadForm from '../components/LeadForm'
 
 const merchantPoints = [
   'Stable INR deposit flow for India-facing traffic',
