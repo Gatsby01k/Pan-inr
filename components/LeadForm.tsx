@@ -16,7 +16,7 @@ const initialState: FormState = {
   error: '',
 };
 
-export function LeadForm({ type }: { type: LeadType }) {
+export default function LeadForm({ type }: { type: LeadType }) {
   const [state, setState] = useState<FormState>(initialState);
 
   const isMerchant = type === 'merchant';
@@ -84,7 +84,12 @@ export function LeadForm({ type }: { type: LeadType }) {
             </label>
             <label className="span-2">
               Required Payment Flow
-              <textarea name="flow" required placeholder="Describe your deposit flow, methods, and expected scale." rows={4} />
+              <textarea
+                name="flow"
+                required
+                placeholder="Describe your deposit flow, methods, and expected scale."
+                rows={4}
+              />
             </label>
             <label>
               Telegram
@@ -123,7 +128,11 @@ export function LeadForm({ type }: { type: LeadType }) {
             </label>
             <label className="span-2">
               Notes
-              <textarea name="notes" placeholder="Anything relevant about accounts, team, methods, or coverage." rows={4} />
+              <textarea
+                name="notes"
+                placeholder="Anything relevant about accounts, team, methods, or coverage."
+                rows={4}
+              />
             </label>
             <label className="span-2">
               Email
